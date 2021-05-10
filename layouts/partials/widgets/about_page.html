@@ -1,0 +1,46 @@
+{{ $ := .root }}
+{{ $page := .page }}
+
+<!-- stylesheet from https://animate.style -->
+<head>
+  <meta charset="UTF-8">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+</head>
+
+<style>
+  greet  {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+</style>
+
+<!-- About me widget -->
+<div class="about-page">
+  <div class="row">
+    <div class="col-12 col-lg-3">
+      <h1>about me</h1>
+      <br>
+    </div>
+    <div class="col-12 col-lg-9">
+        <div class="card-about">
+          <greet>Hi! I'm Pipe 👋 </greet>
+          <br>
+          <br>
+          I'm a recent graduate living in Copenhagen, Denmark. Previously, I've lived in Madrid, Barcelona and my <i>not-so-glamorous-hometown</i> Tudela. I have an academic background in <b>Economics</b> with focus in Econometrics, Data Science and Development Economics. I intend to continuously learn and grow in the field of data science.
+          <br>
+          <br>
+          In this website I share all the blog posts, projects and course notes that I've been working on. Expect a lot of R, python, and math.
+          <br>
+          <br>
+          <b>Feel free to email me at <a href="mailto:pipegalera@gmail.com" target="_blank">pipegalera@gmail.com</a>, check out my <a href="/files/cv.pdf" target="_blank">CV</a> or <a href="https://www.linkedin.com/in/pipegalera/" target="_blank">LinkedIn</a>, view my code on <a href="https://github.com/pipegalera" target="_blank">github</a>, or say hi on <a href="https://twitter.com/pipegalera" target="_blank">Twitter</a>.</b>
+        </div>
+    </div>
+    <div class="col-12">
+      <h3>my <a href="#experience">experience</a>, <a href="#education">education</a>, & <a href="#techskills">tech skills</a><br><a href="#experience"><div class="arrow-bounce"><br><i class="fas fa-chevron-down"></i></div></a></h3>
+    </div>
+  </div>
+
+</div>
