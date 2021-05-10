@@ -1,5 +1,7 @@
 # Pipegalera.com
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e9bf7883-ae75-443a-9b67-0bcca8c54cd3/deploy-status)](https://app.netlify.com/sites/pipegalera/deploys)
+
 
 My personal website hosted in this repo and deployed in [Netlify](https://www.netlify.com/).
 
