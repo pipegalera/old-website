@@ -27,11 +27,11 @@ Deep generative models are very useful to create synthetic samples using the pro
 # <span style="color:#FF9F1D"> Use examples</span>
 
 - Debiasing image recognition
--
+
 Let's say that you have a silly algorithm that takes facial expressions and the goal is classifying between *pretty* or *non pretty*. However, all your faces are either *white-blond-people smiling at the camera* or portraits of *drug addicts*. This algorithm won't create a boundary between pretty and not, it would define a boundary between white-blond-smiling people and drug users. Generative models can follow the facial distribution of the existing sample to create new samples of portraits with different skin tones, postures and atributes.
 
 - Outlier detection in images
--
+
 Rare events in tail distributions, such as people crossing the street in red, accidents, or sudden impacts can be created by generative models as samples to train the model of self-driving cars. The benefit is that the car would know what to do in these extreme scenarios even if it hasn't seen it before in the sample.
 
 
@@ -111,7 +111,7 @@ Let's analyze this regularization term analytically: $D\left(q_{\phi}(\mathrm{z}
 
 $D$ is a function of:
 
-- $q_{\phi}(z \mid x)$: the encoding. Imposes to the new synthetic images $\hat{x}$ to follow a **inferred** latent distribution of the latent variables $z$.
+- $q_{\phi}(z \mid x)$: the encoding. Imposes to the new synthetic images $\hat{x}$ to follow a inferred latent distribution of the latent variables $z$.
 
 - $p(z)$: the decoding. Imposes to the new synthetic images $\hat{x}$ to follow a prior **fixed prior** distribution of $z$
 
