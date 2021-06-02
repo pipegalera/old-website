@@ -149,7 +149,7 @@ The more the difference, the worse the prediction as predicted values are far aw
 On average, for all the $n$ observations:
 
 $$
-\boldsymbol{J}(\boldsymbol{W})=\frac{1}{n} \sum_{i=1}^{n} \mathcal{L}\left(f\left(x^{(i)} ; \boldsymbol{W}\right), y^{(i)}\right.
+\boldsymbol{J}(\boldsymbol{W})=\frac{1}{n} \sum_{i=1}^{n} \mathcal{L}\left(f\left(x^{(i)} ; \boldsymbol{W}\right), y^{(i)}\right)
 $$
 
 # <span style="color:#FF9F1D"> Training the Neural Network: Gradient Descent and Backpropagation </span>
