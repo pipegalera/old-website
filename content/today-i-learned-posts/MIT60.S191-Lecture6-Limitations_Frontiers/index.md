@@ -25,11 +25,11 @@ Deep Neural Networks are extremely good at finding a pattern **in the existing d
 ![](./images/L6_understanding.png)
 ![](./images/L6_understanding_1.png)
 
-A model is as good as the data you feed it. If you tell train a model to see a banana image and a tree image as a dog, every time that the model sees **that exact images** it will correctly classify them. The problem comes when it sees other banans or tree images. The accuracy could be 100% in the training set and has close-to-random accuracy in the test set.
+A model is as good as the data you feed it. If you have trained a model with a banana image and a tree image labeled as "dog", every time that the model sees **those exact images** it will classify them as the label you have used. The problem comes when it sees other banans or tree images. The accuracy could be 100% in the training set and close-to-random accuracy in the test set:
 
 ![](./images/L6_understanding_2.png)
 
-The model overfitted the specific images to the specific label and has **no generalization power** to predict new unseen data. **Without generalization, any neural network is worthless.** They can approximate any seen distribution, but how do we know what and how it is going to predict in unseen data?
+Random labeling led to random accuracy in the test data. The model overfitted the specific images to the specific label and has **no generalization power** to predict new unseen data. **Without generalization, any neural network is worthless.** A Neural Network can approximate any seen distribution, but how do we know what and how it is going to predict in unseen data?
 
 ![](./images/L6_approximation.png)
 
