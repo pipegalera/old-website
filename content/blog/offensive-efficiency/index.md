@@ -2,7 +2,7 @@
 title: 'Measuring Efficient Offensive Production in the NBA'
 subtitle: 'The goal is building a metric of offensive efficiency that can be used to detect winning players and teams'
 
-summary: The goal is building a metric of offensive efficiency that can be used to detect winning players and teams
+summary: The goal is to build a metric of offensive efficiency that can be used to detect winning players and teams
 
 authors: []
 
@@ -63,7 +63,7 @@ $$
 
 The Offensive Efficiency of a player $i$ in the season $s$ is the number of successful $i$ player offensive possessions per game -Field Goal and Assist- divided by the player's number of potential ends of possession per game -Field Goal Attempt, Assist, Turn Over or Offensive Rebound-.
 
-**The score** represents the performing efficiency. If a player has a OE of 0.6, we might think of that player as performed at 60% of excellent efficiency. Meaning that in 60% of the possessions that he was directly involved, with this player assisting or scoring. Players with non-margninal minutes have an Offensive Efficiency coefficient between 0 and 1.
+**The score** represents the performing efficiency. If a player has an OE of 0.6, we might think of that player as performed at 60% of excellent efficiency. Meaning that in 60% of the possessions that he was directly involved, with this player assisting or scoring. Players with non-marginal minutes have an Offensive Efficiency coefficient between 0 and 1.
 
 **A OE score of 0** means that a player did not make any field goals or assists, and therefore his team finished the possession without any basket that can be attributed to him.
 
@@ -94,7 +94,7 @@ As you can imagine, this metric rewards a player that creates points. The follow
 
 You might notice that players that score near the rim have a better OE, which makes sense as near the rim is the most efficient spot in the game[^2].
 
-**The average Offensive Efficiency for this season was 0.57**. The 40% of the top scorers are more efficient than the league average, while others the resting 60% are not. In the next section explain more deeply how some of these players could be more efficient but are forced to make tough shots.
+**The average Offensive Efficiency for this season was 0.57**. The 40% of the top scorers are more efficient than the league average, while others the resting 60% are not. The next section explains more deeply how some of these players could be more efficient but are forced to make tough shots.
 
 ## Making sense of the team context evaluating individual Offensive Efficiency
 
@@ -102,21 +102,9 @@ An Offensive Efficiency below the League average doesn't imply that a player is 
 
 For example, Stephen Curry was asked to do a lot this 2021 season to carry the offense of the Warriors. **Good players in bad teams are likely to score less efficiently** because they have to score more for the team, and in more difficult situations. Players like Steph can be more efficient, but their OE is biased down because of their team context.
 
-Golden State's offense gravitates towards **Stephen Curry**. Opposing teams tighten spaces around him and constantly dropping bodies if he tries to penetrate to the basket. As a result, Curry is forced to make difficult shots such as this one:
+Golden State's offense gravitates towards **Stephen Curry**. Opposing teams tighten spaces around him and constantly dropping bodies if he tries to penetrate the basket. As a result, Curry is forced to make difficult shots.
 
-<video width=100% controls>
-    <source src="/videos/blog/offensive-efficiency/curry.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
-In contrast, **Kyle Irving** can get more assists, open floors to dribble, and space to score just because he has elite teammates. **His teammates make him more efficient individually**. Irving can easily dribble to create some space for the jump shot against a hopeless Jordan Bell:
-
-<video width=100% controls>
-    <source src="/videos/blog/offensive-efficiency/irving.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
-Comparing this game clip with the last, Irving had the space that Curry didn't because he has the most efficient three-pointer in the League at his right -Joe Harris- and Kevin Durant at his left, so the defenders stick to their marks.
+In contrast, **Kyle Irving** can get more assists, open floors to dribble, and space to score just because he has elite teammates. **His teammates make him more efficient individually**. Irving can easily dribble to create some space for the jump shots because the defenders have to stick to their marks. 2 against 1 is not an option when you have to defend also James Harden, Kevin Durant and Joe Harris.
 
 **Team context plays an enormous role in players efficiency stats and therefore bias Offensive Efficiency.**
 
@@ -124,7 +112,7 @@ From the volume statistical perspective, having good teammates have a disadvanta
 
 Once we move deeper into a metric that counts the production **amount** among with the efficiency, Curry's extra buckets attenuate the lack of efficiency because of his *team-context*.
 
-## Offensive Efficiency of LeBron vs Carmelo
+## Offensive Efficiency of LeBron and Carmelo
 
 We can compare the evolution of Offensive Efficiency of different players over time, to see if they could be a **correlation of efficiency and team wins**.
 
@@ -162,11 +150,13 @@ Compare these 2 situations:
 - Campazzo passes the ball to Jokić. Jokić pushes the defender and ends with a hook near the rim. Jokić scores, Campazzo assists.
 - Tatum iso against his defender. He quickly penetrates to the rim driving 2 more defenders to him. Surrounded by defenders passes the ball to Ojeleye at the left corner that takes the open shot. Ojeleye scores, Tatum assists.
 
-If you are a Nuggets or Celtics fan, you must have seen these situations plenty of times this season. The result is the same but the value of the assists are quite different.
+If you are a Nuggets or Celtics fan, you must have seen these situations plenty of times this season. The result is the same but the value of these assists are quite different.
 
-In theory, we could calculate each assist worth according to the extra expected points added and where the scorer was, for each assist. For example, assisted corner threes would worth more than simple assists moving the ball at the perimeter. But this approach would require spatial-temporal data and definitely not keeping this metric simple.
+![Boston Celtics forward Jayson Tatum, center, drives to the rim as, Denver Nuggets defenders Paul Millsap, left, and Michael Porter Jr., right, defend in the first half of an NBA basketball game Sunday, April 11, 2021, in Denver. (AP Photo/David Zalubowski)AP](https://www.masslive.com/resizer/qNPoaECxb0ZVNCwI3NUb-zdqgiU=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/SSUJAYXBYFA4NEBFLF35Z4J7AM.jpg)
 
-To keep the assist value wrapped in a simple coefficient, I will take **the average expected points added from an assist** stated in [A. Sicilia et al.](https://arxiv.org/pdf/1902.08081.pdf). On average, **an assisted shot added 0.16 expected points more compared to an unassisted shot**. This result is more accurate and significantly lower than the previous coefficient of 0.76 from the first attempts to calculate the assist value[^1].
+In theory, we could calculate each assist worth according to the extra expected points added and where the scorer was, for each assist. For example, assisted corner threes would worth more than simple assists moving the ball at the perimeter. But this approach would require spatial-temporal data and breaking a rule for this metric: keep it simple.
+
+To keep the assist value wrapped in a simple coefficient, I will take **the average expected points added from an assist** stated in [A. Sicilia et al. (2019)](https://arxiv.org/pdf/1902.08081.pdf). On average, **an assisted shot added 0.16 expected points more compared to an unassisted shot**. This result is more accurate and significantly lower than the previous coefficient of 0.76 from the first attempts to calculate the assist value[^1].
 
 While this "shortcut" is not perfect, it allows data and NBA enthusiasts like me to being able to [download free aggregate data](https://share.streamlit.io/pipegalera/basketballreference-webscraper/main) and building this metric.
 
@@ -202,8 +192,11 @@ The following table presents the top 20 players in points per game for the 2021 
 |  9 | Kevin Durant          | 16.05 |  26.9 | 19 | Devin Booker          | 13.7  |  25.6 |
 | 10 | Joel Embiid           | 16.04 |  28.5 | 20 | Jaylen Brown          | 13.3  |  24.7 |
 
-The way the value should be interpreted is as efficient points made. In the end, EOP is points plus assists "translated to points" multiplied by the players' efficiency coefficient OE.
+The way the value should be interpreted is as efficient points made. In the end, EOP is points plus assists "translated to points" multiplied by the players' efficiency coefficient OE. Not surprisingly **Nikola Jokić ranks first**, as he is a prolific passer, a very efficient scorer, and a volume shooter.
 
-There are significant differences in rankings according to EOP and OE. EOP rewards more fairly high volume three-pointers and volume scorers like Bradley Beal and gives more credit to players that drive team offense like Stephen Curry and Luka Dončić. It details better than OE the total offensive contribution of a player as it accounts for the number of points produced and includes the value of assists. Not surprisingly Nikola Jokić ranks first, as is a prolific passer, very efficient scorer, and a volume shooter.
+There are significant differences in rankings according to EOP and OE. EOP rewards more fairly high volume three-pointers and volume scorers like Bradley Beal and gives more credit to players that drive team offense like Stephen Curry and Luka Dončić. It details better than OE the total offensive contribution of a player as it accounts for the number of points produced and includes the value of assists. 
+
+
+All the **code** to produce the metrics, tables and data can be found [here in this Github repository.](https://github.com/pipegalera/pipegalera.github.io/tree/main/content/blog/offensive-efficiency/code)
 
 [^1]: Shea, Stephen M., and Christopher E. Baker. Basketball analytics: Objective and efficient strategies for understanding how teams win. Advanced Metrics, 2013.
