@@ -44,7 +44,7 @@ projects: []
 
 ## Requirements
 
-1. Having a backtesting local environment with *Zipline* and the basic packages installed (Pyfolio, Matplotlib, datetime...). If not, please check this [post](https://www.pipegalera.com/post/bracktesting-setup/).
+1. Having a backtesting local environment with *Zipline* and the basic packages installed (Pyfolio, Matplotlib, datetime...). If not, please check this [post](https://www.pipegalera.com/blog/bracktesting-setup/).
 
 2. Have some previous experience with python, specially with the numpy and pandas packages. The post can be followed anyway because is rather a toy-example, but you would have to know data manipulation to implement your own strategy.
 
