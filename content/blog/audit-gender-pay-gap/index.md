@@ -39,7 +39,7 @@ projects: []
 
 # Introduction
 
-Gender Pay Gap remains a persisten problem for last years at many companies. In the United States, Pew Research Center evaluated the trend in gender pay gap from the 1980 until 2020 and discovered that women earned 84% of what men earned. In other words, it would take an extra 42 days of work for women to earn what men did in 2020.
+Gender Pay Gap remains a recurrent problem at many companies. In the United States, Pew Research Center evaluated the trend in gender pay gap from the 1980 until 2020 and discovered that women earned 84% of what men earned. In other words, it would take an extra 42 days of work for women to earn what men did in 2020.
 
 While this gap is closing, [specially for young workers](https://www.pewresearch.org/fact-tank/2021/05/25/gender-pay-gap-facts/), is still an issue that can affect the morale of the company as whole, the decision of prospect candidates to apply to your company, or corrupt the meritocracy system in promotions just to mention a few problems that can derive from not taking into account the Gender Pay Gap.
 
@@ -49,10 +49,10 @@ We will analyze two types:
 
 1. **Unadjusted Gender Pay Gap**. Is there a difference between average pay for men and women in the company?
 
-2. **Unadjusted Gender Pay Gap**. Are there differences between average pay for men and women after we’ve accounted for differences among workers in education, experience, job roles, employee performance and other factors aside from gender
+2. **Adjusted Gender Pay Gap**. Are there differences between average pay for men and women after we’ve accounted for differences among workers in education, experience, job roles, employee performance and other factors aside from gender
 that affect pay.
 
-The analysis includes several **insights** that explains the results. They are marked with a :sparkles: sign.
+The sections include several **insights** that explains the results marked with a :sparkles: sign.
 
 # 1. Unadjusted Gender Pay Gap
 
@@ -298,7 +298,7 @@ The company has **more male workers and they earn more by average**.
 
 **Why we have calculated the median? It is useful?**
 
-Calculating the median pay along the average is important as **the average can be affected by outliers** and therefore could picture a misleading general image of the payrolls. 
+Calculating the median pay along the average is important as **the average can be affected by outliers** and therefore could picture a misleading general image of the pay scheme. 
 
 For example, a highly paid female CEO can raise the average pay of women, but it is only an outliear and would not represent the general pay scheme of women within the company. That is why is important to add the median and observe if there is a difference between the mean and the median that could signal outliers. For this specific dataset, the median and mean are similar, and both can be used to depict the general payroll of the company. 
 
