@@ -49,8 +49,8 @@ We will analyze two types:
 
 1. **Unadjusted Gender Pay Gap**. Is there a difference between average pay for men and women in the company?
 
-2. **Adjusted Gender Pay Gap**. Are there differences between average pay for men and women after we’ve accounted for differences among workers in education, experience, job roles, employee performance and other factors aside from gender
-that affect pay.
+2. **Adjusted Gender Pay Gap**. Are there differences between average pay for men and women **after we’ve accounted for differences among workers** in education, experience, job roles, employee performance and other factors aside from gender
+that affect pay?
 
 The sections include several **insights** that explains the results marked with a :sparkles: sign.
 
